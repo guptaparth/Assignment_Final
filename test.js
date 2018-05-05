@@ -1,0 +1,1 @@
+console.log("Hello, nm,n,,,,mJavascript!");

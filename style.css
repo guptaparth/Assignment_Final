@@ -1,0 +1,51 @@
+body{
+
+    font-family: Helvetica , sans-serif  ;
+
+}
+
+.panel {
+    height: 620px;
+    width: 777px;
+    border: 1px solid black;
+    margin: auto;
+    background-color: white;
+}
+#menu {
+    /* height: 34px; */
+    width: 90px !important;
+    position: relative;
+    /* top: -56px; */
+    /* left: 67px; */
+    float: right;
+}
+
+#button {
+    /* float: right; */
+    height: 32px;
+    width: 96px;
+    position: relative;
+    /* top: -53px; */
+    /* right: 52px; */
+    /* background-color: green; */
+    color: white;
+    font-size: 15px;
+}
+
+
+
+#input{
+    /* margin-top: 10px; */
+    position: relative;
+    height:400px;
+    width: 100%;
+
+}
+
+
+
+.header{
+
+    margin-top: 10px;;
+}
+

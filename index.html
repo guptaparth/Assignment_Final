@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+    <!-- <div class="panel"></div> -->
+    <hr></hr>
+    
+    <div class="header">
+      <h1>
+        <center >Code Editor/Compiler</center>
+      </h1>
+    </div>
+    <hr></hr>
+
+    <div class="form-group">
+    <select id="menu" class="form-control" style="font-size:13px;" onchange="hello()">
+        <option>C</option>
+        <option>C++</option>
+        <option>Java</option>
+        <option>Javascript</option>
+      </select>
+    </div>
+    <span style="font-size: 19px;">Code</span>
+    <!-- <div class="form-group"> -->
+    <!-- <textarea rows = "16" id="input"></textarea> -->
+    <div id="input"></div>
+    <button class="btn btn-primary" style="margin-top : 10px;" type="button" id="button">Execute</button>
+    <div style="margin-top : 10px; font-size:19px;">Output</div>
+    <div class="footer form-group">
+      <textarea class="form-control" rows="4" id="output" style="font-size:16px;"></textarea>
+    </div>
+    <!-- </div> -->
+  </div>
+
+  </div>
+
+
+
+
+  <script src="client.js"></script>
+  <script src="src/ace.js" type="text/javascript" charset="utf-8"></script>
+
+  <script>
+    var editor = ace.edit("input");
+    // editor.setTheme("ace/theme/twilight");
+    editor.setTheme("ace/theme/iplastic");
+    // console.log(editor);
+    editor.setOptions({
+      fontSize: "14pt"
+    });
+    editor.session.setMode("ace/mode/c_cpp");
+    
+  </script>
+</body>
+
+</html>
