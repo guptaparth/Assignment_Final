@@ -34,7 +34,7 @@ io.on('connection', (socket) => {
             });
 
             gpp.on('close', (code) => {
-                console.log(`Javascript Code Exexuted`);
+                console.log(`Javascript Code Executed`);
             });
         }
         else if (data.menu == 'Java') {
@@ -56,7 +56,7 @@ io.on('connection', (socket) => {
             });
 
             gpp1.on('close', (code) => {
-                console.log(`Java Code Exexuted`);
+                console.log(`Java Code Executed`);
             });
         }
         else if (data.menu == "C++") {
@@ -77,7 +77,7 @@ io.on('connection', (socket) => {
             });
 
             gpp4.on('close', (code) => {
-                console.log(`C++ Code Exexuted`);
+                console.log(`C++ Code Executed`);
             });
         }
         else if (data.menu == "C") {
@@ -98,8 +98,12 @@ io.on('connection', (socket) => {
             });
 
             gpp6.on('close', (code) => {
-                console.log(`C Code Exexuted`);
+                console.log(`C Code Executed`);
             });
         }
     })
+    socket.on('typing',(data)=>
+    {  
+            socket.broadcast.emit("typing",data)
+    }) 
 })

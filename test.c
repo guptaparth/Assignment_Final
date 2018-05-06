@@ -1,7 +1,8 @@
-#include <stdio.h>
-int main()
+#include <iostream>
+using namespace std;
+
+int main() 
 {
-   // printf() displays the string inside quotation
-   printf("Hello mnbnnC");
-   return 0;
+    cout << "Hellofrnvnfdk kdkC++";
+    return 0;
 }

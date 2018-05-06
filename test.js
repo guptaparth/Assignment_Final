@@ -1,1 +1,1 @@
-console.log("Hello, nm,n,,,,mJavascript!");
+console.log("fn,snv")
